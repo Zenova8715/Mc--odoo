@@ -1,0 +1,9 @@
+<odoo>
+    <record id="action_mc_ranking" model="ir.actions.client">
+        <field name="name">Ranking Board</field>
+        <field name="tag">mc_ranking_board</field>
+    </record>
+
+    <menuitem id="menu_mc_root" name="Minecraft Tiers" sequence="10"/>
+    <menuitem id="menu_mc_board" name="Board" parent="menu_mc_root" action="action_mc_ranking"/>
+</odoo>
