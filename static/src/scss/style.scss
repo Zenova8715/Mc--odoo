@@ -1,0 +1,12 @@
+.mc_wrap {
+    background: #0b0e14; color: white; height: 100%; padding: 20px;
+    .mc_grid { display: flex; gap: 10px; justify-content: space-around; }
+    .mc_col { background: #151921; width: 19%; border-radius: 5px; min-height: 400px; }
+    .mc_head { padding: 10px; text-align: center; font-weight: bold; background: #1f2530; }
+    .t1 { background: #d4af37 !important; color: black; } // Gold for Tier 1
+    .mc_card { 
+        padding: 8px; border-bottom: 1px solid #222; cursor: pointer; display: flex; align-items: center;
+        &:hover { background: #2a313d; }
+    }
+    .mc_img { width: 24px; height: 24px; border-radius: 3px; margin-right: 8px; }
+}
