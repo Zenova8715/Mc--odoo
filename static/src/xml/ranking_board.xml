@@ -1,0 +1,19 @@
+<templates>
+    <t t-name="mc_tiers.RankingBoard">
+        <div class="mc_wrap">
+            <div class="mc_grid">
+                <t t-foreach="['1', '2', '3', '4', '5']" t-as="t" t-key="t">
+                    <div class="mc_col">
+                        <div t-attf-class="mc_head t#{t}">Tier <t t-esc="t"/></div>
+                        <t t-foreach="getPlayersByTier(t)" t-as="p" t-key="p.id">
+                            <div class="mc_card" t-on-click="() => this.openPlayer(p.id)">
+                                <img t-att-src="p.image_url" class="mc_img"/>
+                                <span t-esc="p.name"/>
+                            </div>
+                        </t>
+                    </div>
+                </t>
+            </div>
+        </div>
+    </t>
+</templates>
